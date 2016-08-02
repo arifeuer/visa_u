@@ -13,10 +13,14 @@ public class Main {
             System.out.println("Please enter a date in the following format: dd/mm/yyyy");
             System.out.println("Enter \"quit\" in order to stop program");
 
-            //Check if user quit
-
             //Read user input
             String in = sc.nextLine();
+
+            //Check if user quit
+            quit = "quit".equalsIgnoreCase(in);
+            if (quit) {
+                break;
+            }
 
             //Parse input into integers (+ error checking)
             int[] date_ints = Main.parse_input(in);
@@ -28,11 +32,7 @@ public class Main {
             //Output the day of the week (number)
             System.out.printf("%s was a %s", in, date.dayOfWeekStr);
             System.out.println();
-
-            //TODO: Translate day of week into its corresponding string
         }
-
-
     }
 
     public static int[] parse_input(String in) {
