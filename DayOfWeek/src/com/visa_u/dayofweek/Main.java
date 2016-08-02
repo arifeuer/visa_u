@@ -26,7 +26,7 @@ public class Main {
             date = new Date(date_ints[0], date_ints[1], date_ints[2]);
 
             //Output the day of the week (number)
-            System.out.printf("%s was a %d", in, date.dayOfWeek);
+            System.out.printf("%s was a %s", in, date.dayOfWeekStr);
             System.out.println();
 
             //TODO: Translate day of week into its corresponding string
@@ -71,17 +71,15 @@ class Date {
 
     public int calculate_day_of_week(int dayOfMonth, int month, int year) {
         //Formula from https://en.wikipedia.org/wiki/Zeller%27s_congruence
-
         if (month == 1 || month == 2) {
             month += 12;
             year -= 1;
         }
 
         int a, b, c, d, dayOfWeek;
-
         a = 13 * (month + 1) / 5;
         b = year / 4;
-        c = 6 * year / 100;
+        c = 6 * (year / 100);
         d = year / 400;
 
         dayOfWeek = (a + b + c + d + year + dayOfMonth) % 7;
