@@ -24,6 +24,38 @@ public class Main {
         //addUp(1, "three");  ## Doesn't compile because no signature matches addUp(int, String)
     }
 
+    public static int addUp(int... list) {
+        System.out.print("int addUp result: ");
+        int sum = 0;
+        for (int i = 0; i < list.length; i++) {
+            sum += list[i];
+        }
+        return sum;
+    }
+
+    public static double addUp(double... list) {
+        System.out.print("double addUp result: ");
+        double sum = 0;
+        for (int i = 0; i < list.length; i++) {
+            sum += list[i];
+        }
+        return sum;
+    }
+
+    public static int addUp(String... list) {
+        System.out.print("String addUp result: ");
+        int sum = 0;
+        for (int i = 0; i < list.length; i++) {
+            sum += Main.toNum(list[i]);
+        }
+        return sum;
+    }
+
+    public static int toNum(String str) {
+        return textNums.indexOf(str);
+    }
+
+    /** Lab1 Work
     public static int addUp(int a, int b) {
         System.out.print("int addUp result: ");
         return a + b;
@@ -42,7 +74,7 @@ public class Main {
     public static int toNum(String str) {
         return textNums.indexOf(str);
     }
-
+    **/
 
 
 
