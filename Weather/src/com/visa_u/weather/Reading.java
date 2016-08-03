@@ -1,10 +1,10 @@
 package com.visa_u.weather;
 
 public class Reading {
-    String dayOfWeek;
-    int hourOfDay, temp, windSpeed;
+    public String dayOfWeek;
+    public int hourOfDay, temp, windSpeed;
 
-    public Reader(String weatherInfo) {
+    public Reading(String weatherInfo) {
         try {
             String[] elements = weatherInfo.split(", ");
             dayOfWeek = elements[0];
