@@ -21,12 +21,12 @@ public class Reading {
     }
 
     public String rateTempurate() {
-        // Implement
-        return "";
+        //Return "cold/mild/warm/hot"
+        return (this.temp < 55) ? "cold" : ((this.temp < 65) ? "mild" : ((this.temp < 80) ? "warm" : "hot"));
     }
 
     public String getTime() {
         // Implement
-        return "";
+        return (this.hourOfDay < 9) ? "morning" : ((this.hourOfDay < 15) ? "afternoon" : "night");
     }
 }
