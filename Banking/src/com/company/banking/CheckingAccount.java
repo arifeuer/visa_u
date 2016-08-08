@@ -8,7 +8,7 @@ public class CheckingAccount extends Account {
 
     public CheckingAccount(String holderName, long authOverdraftAmount) {
         super(holderName);
-        this.authOverdraftAmount = authOverdraftAmount
+        this.authOverdraftAmount = authOverdraftAmount;
     }
 
     boolean deposit(long amount) {
@@ -17,14 +17,14 @@ public class CheckingAccount extends Account {
     }
 
     boolean withdraw(long amount) {
-        if (amount >= 0) {
+        /*if (amount >= 0) {
             System.out.println("Please use a negative number to indicate a withdrawl next time");
             System.exit(1);
-        }
+        } */
 
         long maxWithdraw = this.getBalance() + authOverdraftAmount;
         if (amount <= maxWithdraw) {
-            this.transaction("Checking Withdraw", amount);
+            this.transaction("Checking Withdraw", amount*(-1));
             return true;
         } else {
             return false;

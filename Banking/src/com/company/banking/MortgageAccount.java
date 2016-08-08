@@ -12,7 +12,7 @@ public class MortgageAccount extends Account {
     }
 
     boolean deposit(long amount) {
-        this.transaction("Mortgage Payment", amount);
+        this.transaction("Mortgage Payment", amount*(-1));
         return true;
     }
 
