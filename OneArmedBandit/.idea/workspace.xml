@@ -21,7 +21,18 @@
     <favorites_list name="OneArmedBandit" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/visa/casino/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -143,12 +154,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470698552393</updated>
+<<<<<<< HEAD
       <workItem from="1470698556065" duration="2060000" />
+=======
+      <workItem from="1470698556065" duration="1772000" />
+>>>>>>> 74e00b8b5da6b081241f59e9295a77fe7b6abad9
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="2060000" />
+=======
+    <option name="totallyTimeSpent" value="1772000" />
+>>>>>>> 74e00b8b5da6b081241f59e9295a77fe7b6abad9
   </component>
   <component name="ToolWindowManager">
     <frame x="331" y="60" width="1392" height="935" extended-state="0" />
@@ -203,8 +222,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/visa/casino/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="180">
           <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+=======
+        <state relative-caret-position="210">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+>>>>>>> 74e00b8b5da6b081241f59e9295a77fe7b6abad9
           <folding />
         </state>
       </provider>
