@@ -1,5 +1,6 @@
 package com.visa.exception;
 import java.util.Scanner;
+import java.io.File;
 
 public class Main {
 
@@ -10,13 +11,17 @@ public class Main {
         String [] fileNames = new String[2];
 
         while (!validFileNames) {
-            validFileNames = Main.prompt(sc, fileNames);
+            validFileNames = Main.initialPrompt(sc, fileNames);
         }
+
+        File source = new File();
 
         //Copy the first (presumed to exist) into the second (probably doesn't exist)
 
             //If first file doesn't exist, print message
                 //Ask for first file again
+
+
 
             //If first file does exist, copy contents into second file
                 //If any IO exceptions are thrown, report problem and re-prompt for second file
@@ -24,7 +29,7 @@ public class Main {
         //Exit after one successful copy
     }
 
-    public static boolean prompt(Scanner sc, String[] fileNames) {
+    public static boolean initialPrompt(Scanner sc, String[] fileNames) {
         System.out.print("Please enter two filenames, separated by a space: ");
 
         //Parse out filenames
