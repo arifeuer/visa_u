@@ -1,9 +1,7 @@
 package com.visa.exception;
 
 import java.util.Arrays;
-import java.util.IllegalFormatException;
 import java.util.Scanner;
-import java.util.concurrent.ExecutionException;
 
 public class Main {
 
