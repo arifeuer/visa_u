@@ -6,11 +6,11 @@ package com.visa.photos;
 public class ExcitedParent implements Photographer {
     @Override
     public void prepareScene() {
-        
+        System.out.println("Hey kids, smile!");
     }
 
     @Override
     public String takePhotograph() {
-        return null;
+        return "A beautiful group of kids, ready for the photo album";
     }
 }

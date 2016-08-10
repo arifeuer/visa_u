@@ -6,11 +6,11 @@ package com.visa.photos;
 public class HackedWebcam implements Photographer {
     @Override
     public void prepareScene() {
-
+        System.out.println("Let me see your proprietary info...");
     }
 
     @Override
     public String takePhotograph() {
-        return null;
+        return "Got the meetings notes";
     }
 }

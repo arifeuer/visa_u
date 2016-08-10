@@ -6,11 +6,11 @@ package com.visa.photos;
 public class FBIDrone implements Photographer {
     @Override
     public void prepareScene() {
-
+        System.out.println("bzzzzzzzzzz");
     }
 
     @Override
     public String takePhotograph() {
-        return null;
+        return "chk chk";
     }
 }
