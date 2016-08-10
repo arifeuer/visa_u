@@ -7,4 +7,8 @@ public class BadMonthException extends Exception {
     public BadMonthException(Throwable th) {
         super(th);
     }
+
+    public BadMonthException(String s, Throwable th) {
+        super(s, th);
+    }
 }

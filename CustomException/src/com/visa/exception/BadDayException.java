@@ -7,4 +7,8 @@ public class BadDayException extends Exception {
     public BadDayException(Throwable th) {
         super(th);
     }
+
+    public BadDayException(String s, Throwable th) {
+        super(s, th);
+    }
 }
